@@ -1,117 +1,168 @@
-
+@import url("/assets/FEU-FONT.ttf");
 body {
-    background-color: rgb(255, 255, 255);
-  }
+  background-color: rgb(255, 255, 255);
+}
 
-  nav {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #0a590a;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a590a;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  .logo img {
-    width: 170px;
-  }
+.logo img {
+  width: 170px;
+}
 
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  font-family: "Kanit", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 17px;
+  color: rgb(255, 255, 255);
+}
+
+.mobile {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.mobile-active {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(59, 57, 57);
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.mobile-active a {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid #575757;
+}
+
+.mobile-active a:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
   .links {
-    display: flex;
-    gap: 20px;
-  }
-
-  .links a {
-    font-family: 'Kanit', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    margin-top: 17px;
-    color: rgb(255, 255, 255);
+    display: none;
   }
 
   .mobile {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+    display: flex;
   }
 
-  .mobile div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
+  .mobile-active.active {
+    display: flex;
+  }
+}
+
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url(/assets/FEU\ CAMPUS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 5%;
+  height: 450px;
+  padding-bottom: 5%;
+}
+
+.bn-title {
+  font-family: FEU-FONT;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.bn-body {
+  font-family: FEU-FONT;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.display-1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-width: 1.5px;
+    margin-bottom: 20px;
+    z-index: 1;
   }
 
-  .mobile-active {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(59, 57, 57);
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    width: 150px;
-    border-radius: 5px;
+  .card-title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
   }
 
-  .mobile-active a {
-    font-family: 'Kanit', sans-serif;
+.card-text{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid #575757;
-  }
-
-  .mobile-active a:last-child {
-    border-bottom: none;
-  }
-
-  @media (max-width: 768px) {
-    .links {
-      display: none;
-    }
-
-    .mobile {
-      display: flex;
-    }
-
-    .mobile-active.active {
-      display: flex;
-    }
-  }
-
-  .banner {
-    position: relative;
-    background-image: url(/assets/FEU\ CAMPUS.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding-top: 5%;
-    height: 500px;
-    padding-bottom: 5%;
-  }
-
-  .bn-title {
-    font-family: 'Anton SC', sans-serif;
-    font-size: 50px;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-  .bn-body {
-    font-family: 'Kanit', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+
+
+
+ 
+
+
+
