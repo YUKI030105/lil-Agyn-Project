@@ -1,6 +1,17 @@
-@import url("/assets/FEU-FONT.ttf");
+@font-face {
+  font-family: FEU-FONT;
+  src: url(/assets/FEU-FONT.ttf);
+}
+@font-face {
+  font-family: VarelaRound-Regular;
+  src: url(/assets/VarelaRound-Regular.ttf);
+}
 body {
   background-color: rgb(255, 255, 255);
+}
+img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 nav {
@@ -9,7 +20,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #0a590a;
+  background-color: 	#015e01;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -25,13 +36,13 @@ nav {
 }
 
 .links a {
-  font-family: "Kanit", sans-serif;
-  font-size: 17px;
-  font-weight: 400;
+  font-family: VarelaRound-Regular;
+  font-size: 14px;
+  font-weight: 500;
   font-style: normal;
   text-decoration: none;
   margin-top: 17px;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 233, 233);
 }
 
 .mobile {
@@ -91,29 +102,23 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)), url(/assets/FEU\ CAMPUS.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  background-position: center;
   color: white;
   padding-top: 5%;
-  height: 450px;
+  height: 500px;
   padding-bottom: 5%;
+  
 }
 
 .bn-title {
   font-family: FEU-FONT;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 400;
-  font-style: normal;
+  font-style:normal;
+  text-shadow: 2px 2px 4px rgba(116, 105, 105, 0.5);
   text-align: center;
   margin-top: 10%;
-}
-
-.bn-body {
-  font-family: FEU-FONT;
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-us {
@@ -126,7 +131,8 @@ nav {
 
 .display-1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    color: rgb(85, 69, 69);
+    font-size: 30px;
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
@@ -134,20 +140,23 @@ nav {
 
 .card {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: 1.5px;
     margin-bottom: 20px;
     z-index: 1;
+    width: 70%;
+    margin-right: auto;
+    margin-left: 0;
   }
 
   .card-title{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:VarelaRound-Regular;
     font-size: 25px;
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
+    color: rgb(85, 69, 69);
   }
 
 .card-text{ 
@@ -159,6 +168,7 @@ nav {
     margin-bottom: 30px;
   }
 
+  
 
 
 
